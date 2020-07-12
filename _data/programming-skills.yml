@@ -1,0 +1,11 @@
+- name: Computer Vision
+  percentage: 70
+  color: danger
+
+- name: Natural Language Processing
+  percentage: 85
+  color:
+
+- name: Data Analysis
+  percentage: 80
+  color: dark

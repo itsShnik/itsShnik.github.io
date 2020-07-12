@@ -1,0 +1,78 @@
+### Site Settings ###
+title               : iamshnik
+description         : >-
+                     "The world is full of magical :snowflake: things, 
+                      patiently waiting for our senses to grow sharper."
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+remote_theme        : tejasvaidhyadev/portfolYOU       # theme 
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+
+### Author Info ###
+author:
+  name              : Nikhil Shah
+  image             : https://raw.githubusercontent.com/itsshnik/itsshnik.github.io/master/_images/me.jpeg
+# behance           : your_username
+# dribbble          : your_username
+  email             : shnikisme@gmail.com
+  github            : itsShnik
+# gitlab            : your_username
+  instagram         : iamshnik
+  linkedin          : iamshnik
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : iamshnik
+# vimeo             : your_username
+# youtube           : your_channel_namef
+
+### Disqus
+# disqus: portfolio-bnhbmol6a5
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:                                              # For Documentation Only
+      path: ""                                          # For Documentation Only
+      type: "posts"                                  # For Documentation Only
+    values:
+      comments: true
+      
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

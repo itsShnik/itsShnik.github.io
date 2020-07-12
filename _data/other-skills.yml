@@ -1,0 +1,13 @@
+- name: Flim making
+  percentage: 80
+  color: info
+
+- name: Photography
+  percentage: 90
+  color: success
+
+- name: Graphic Design
+  percentage: 90
+  color: gray 
+
+

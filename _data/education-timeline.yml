@@ -1,0 +1,39 @@
+- entity: Google Summer of Code @julialang
+  link: https://summerofcode.withgoogle.com/projects/#5015442659213312
+  location: 
+  role: Student Developer
+  from: Sep 2017
+  to: present
+  description:
+    - "Working on framwork for Statistical and Deeplearing based Language model in julia."  
+  courses:
+    - " Implemented Statistical Language model framework to develop traditional NLP based model in julia."
+    -  " Framework for Alite BERT in julia for reseracher, students and Industries"
+    -  " Julia Wrapper for Sentencepiece library "
+  tools: [NLP, Transformer, Language model, julia]
+
+- entity: CERN
+  link: https://home.cern/
+  location: Hong kong
+  role: Student Researcher
+  from: march 2020
+  to: Present
+  description: I am involved in the ongoing research on the track classification for identifying tau-leptons from Boson decay. I am working on developing deep learning based algorithms to efficiently classify between the background noise and tau-jets.
+  courses:
+    
+  tools: [DeepLearning, LHC, Tau-leptons Decay]
+
+- entity: Centre for Artificial Intelligence
+  link: http://www.ai.iitkgp.ac.in/
+  #location: IIT Kharagpur,India
+  role: UG researcher
+  from: Aug 2019
+  to:  March 2020
+  description: 
+  courses:
+    - "Developed a bidirectional autoencoder based model which uses the information extracted from context with out of reference knowledge to get the softmax probabilities over all the possible answers to a question"
+    - "Extracted the edges based relations from commonsense corporas like ConceptNet and NELL"
+    - "Working on making commonsense inclusive word vectors using the relations extracted like ConceptNet Numberbatch"
+  tools: [Natural Language Processing, Machine Learning]
+
+
