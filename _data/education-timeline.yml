@@ -1,17 +1,3 @@
-- entity: Google Summer of Code @julialang
-  link: https://summerofcode.withgoogle.com/projects/#5015442659213312
-  location: 
-  role: Student Developer
-  from: Sep 2017
-  to: present
-  description:
-    - "Working on framwork for Statistical and Deeplearing based Language model in julia."  
-  courses:
-    - " Implemented Statistical Language model framework to develop traditional NLP based model in julia."
-    -  " Framework for Alite BERT in julia for reseracher, students and Industries"
-    -  " Julia Wrapper for Sentencepiece library "
-  tools: [NLP, Transformer, Language model, julia]
-
 - entity: CERN
   link: https://home.cern/
   location: Hong kong
