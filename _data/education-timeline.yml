@@ -21,7 +21,7 @@
   tools: [Deep Learning, ATLAS, Tau-Identification]
 
 - entity: Visual Information Processing lab
-  link: http://github/itsShnik/visualObjectTracking
+  link: 
   location: IIT Kharagpur 
   role: Undergraduate Research Assistant
   from: May 2019
@@ -33,6 +33,8 @@
     - "Devised a new look-ahead approach for processing information from upcoming frames, when tested on KCF, it improves the estimated average overlap (EAO) by more than 5%"
     - "Developed a model based on convolutional feature extractor paired with Kalman filter for search region prediction and a region proposal network for one shot arbitrary object detection to improve results in long term tracking"
     - "Explored and experimented with novel approaches like verification networks and action driven reinforcement learning for object tracking"
+    
+  github: https://github.com/itsShnik/visualObjectTracking
   tools: [Siamese Networks, Region Proposal Networks, Recursive Bayesian Estimators]
 
 - entity: Centre for Artificial Intelligence
