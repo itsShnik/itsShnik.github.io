@@ -1,25 +1,52 @@
-- entity: CERN
-  link: https://home.cern/
-  location: Hong kong
-  role: Student Researcher
-  from: march 2020
+- entity: SHI Lab
+  link: https://www.humphreyshi.com/people
+  location: University of Oregon
+  role: Research Intern
+  from: April 2020
+  to: Present
+  description: I am leading a researh on multimodal representation learning. The aim is to develop a method to learn generic visual-liguistic representations.  
+  courses:
+    
+  tools: [Vision and Language, Deep Learning]
+
+- entity: ATLAS experiment at CERN
+  link: https://atlas.cern/
+  location: CUHK
+  role: Research Intern
+  from: March 2020
   to: Present
   description: I am involved in the ongoing research on the track classification for identifying tau-leptons from Boson decay. I am working on developing deep learning based algorithms to efficiently classify between the background noise and tau-jets.
   courses:
     
-  tools: [DeepLearning, LHC, Tau-leptons Decay]
+  tools: [Deep Learning, ATLAS, Tau-Identification]
+
+- entity: Visual Information Processing lab
+  link: http://github/itsShnik/visualObjectTracking
+  location: IIT Kharagpur 
+  role: Undergraduate Research Assistant
+  from: May 2019
+  to:  Nov 2020
+  description: Design and development of algorithms for visual object tracking.
+
+  courses:
+    - "Implemented deep learning based state of the art networks like DaSiamRPN. DaSiamRPN works at more than 200 FPS when tested on OTB2015 dataset and gives an AUC of more than 0.63 compared to 0.655 as mentioned in the paper"
+    - "Devised a new look-ahead approach for processing information from upcoming frames, when tested on KCF, it improves the estimated average overlap (EAO) by more than 5%"
+    - "Developed a model based on convolutional feature extractor paired with Kalman filter for search region prediction and a region proposal network for one shot arbitrary object detection to improve results in long term tracking"
+    - "Explored and experimented with novel approaches like verification networks and action driven reinforcement learning for object tracking"
+  tools: [Siamese Networks, Region Proposal Networks, Recursive Bayesian Estimators]
 
 - entity: Centre for Artificial Intelligence
   link: http://www.ai.iitkgp.ac.in/
-  #location: IIT Kharagpur,India
-  role: UG researcher
+  location: IIT Kharagpur 
+  role: Undergraduate Researcher
   from: Aug 2019
-  to:  March 2020
-  description: 
+  to:  Nov 2020
+  description: Design and development of algorithms for context based question answering.
+
   courses:
     - "Developed a bidirectional autoencoder based model which uses the information extracted from context with out of reference knowledge to get the softmax probabilities over all the possible answers to a question"
     - "Extracted the edges based relations from commonsense corporas like ConceptNet and NELL"
-    - "Working on making commonsense inclusive word vectors using the relations extracted like ConceptNet Numberbatch"
-  tools: [Natural Language Processing, Machine Learning]
+
+  tools: [Transformers, Attention Mechanisms, Encoder-Decoder]
 
 
