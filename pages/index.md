@@ -10,9 +10,10 @@ permalink: /
 
 ## **About Me**
 
+
 Hi I'm Nikhil Shah. I am a senior undergraduate student of the Department of Computer Science and Engineering, IIT Kharagpur. 
 
-I am currently working as a research intern at SHI lab, University of Oregon and at the CERN division at Chinese University of Oregon. I have co-founded a startup called [Frostlabs](https://frostlabs.org), where I am also involved in the ongoing research on visual question answering. 
+I am currently working as a research intern at SHI lab, University of Oregon and at the CERN division at Chinese University of Hong Kong. I have co-founded a startup called Frostlabs, where I am also involved in the ongoing research on visual question answering. 
 
 I am enthusiastic about research in multimodal and embodied machine learning. I love to read about \*nix based operating systems and Vim. I am fond of teaching and I write my blogs on machine learning concepts [here](https://learningturtle.github.io/Blog). 
 
