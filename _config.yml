@@ -3,7 +3,7 @@ title               : iamshnik
 description         : >-
     "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light. :sparkles:"
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-remote_theme        : tejasvaidhyadev/portfolYOU       # theme 
+remote_theme        : itsShnik/portfolYOU       # theme 
 
 
 ### Plugins ###
