@@ -1,13 +1,13 @@
 ---
-title: GNN for VQA: Graph-structured Representations for visual question answering
-tags: [GNN, VQA]
-description: Explanation of the paper: Graph-structured Representations for visual question answering, ICCV 2017
+title: Graph-structured representations for VQA
+tags: [GNN, VQA, Paper Explanation]
+description: Explanation of the ICCV 2017 paper, Graph-structured representations for VQA
 ---
 
 This paper is one of the earliest works that leverages graphical structured representations multimodal learning. It introduces how to store the image and the questionas graphical structures and how to find the features of both the modalities using graph neural networks.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/tree/master/_blog_images/GNNForVQA/model.png">
+  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/master/_blog_images/GNNForVQA/gsr_model.png">
 </p>
 
 ## Graph Representations
@@ -26,7 +26,7 @@ The input data for each training or test instance is a question, and a parame-te
 
 The dataset provides the following information about the image
 
-- A set of $$N^S$ objects that constitute the nodes of the scene graph. Each node is represented by a vector $$x_i^S \in R^C$$ of visual features $$(i \in 1..N^S)$$
+- A set of $$N^S$$ objects that constitute the nodes of the scene graph. Each node is represented by a vector $$x_i^S \in R^C$$ of visual features $$(i \in 1..N^S)$$
 
 - A set of pairwise relations between all objects. They form the edges of a fully-connected graph of the scene. The edge between objects $$i$$ and $$j$$ is represented by a vector $$e^S_{ij} \in R^D$$ that encodes relative spatial relationships.
 
@@ -52,17 +52,15 @@ $$x''_i = h_i^T$$
 
 The fusion can be divided into three parts as:
 
-1. __Feature representation for each of the object-word pairs__: This is obtained by simply concatenating the feature vector of both the object and the word. Mathematically for word $$i$$ and object $$j$$, combined features $$c_{ij}$$
+- __Feature representation for each of the object-word pairs__: This is obtained by simply concatenating the feature vector of both the object and the word. Mathematically for word $$i$$ and object $$j$$, combined features $$y_{ij}$$:
 
-$$c_{ij} = [x''_i^Q; x''_j^S]$$
+$$y_{ij} = [x^{''Q}_i; x^{''S}_j]$$
 
-2. __Ranking through cross-attention__: A formulation similar to cosine similarity with learned weights is used to find the relevance between each pair of object and word nodes.
+- __Ranking through cross-attention__: A formulation similar to cosine similarity with learned weights is used to find the relevance between each pair of object and word nodes. Note, that the unprocessed nodes of the graph are used to calculate the relevance score.
 
-$$a_{ij} = \sigma\large(W\large(\frac{x'_i^Q}{||x'_i^Q||} \cdot {x'_j^S}{||x'_j^S||} + b\large)\large)$$
+$$a_{ij} = \sigma\large(W\large(\frac{x^{'Q}_i}{||x^{'Q}_i||} \cdot \frac{x^{'S}_j}{||x^{'S}_j||}\large) + b\large)$$
 
-Note, that the unprocessed nodes of the graph are used to calculate the relevance score.
-
-3. __Collection of ranked features__: The ranked features or say attended features are collected, first by summing across all the objects and then by summing across all the words to give a single feature vector.
+- __Collection of ranked features__: The ranked features or say attended features are collected, first by summing across all the objects and then by summing across all the words to give a single feature vector.
 
 $$y'_i = \mathbf{ReLU}(W_1 \displaystyle\sum_{j=1}{N^S}y_{ij} + b_1)$$
 
@@ -75,17 +73,17 @@ $$y''$$ are the predicted scores for the answer classification.
 The authors of the paper evaluate their paper on the original Abstract Scenes dataset for visual question answering and it's balanced  extension. The results, ablations and a few examples are described in the following images.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/tree/master/_blog_images/GNNForVQA/gsr_results1.png">
+  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/master/_blog_images/GNNForVQA/gsr_results1.png">
 </p>
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/tree/master/_blog_images/GNNForVQA/gsr_results2.png">
+  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/master/_blog_images/GNNForVQA/gsr_results2.png">
 </p>
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/tree/master/_blog_images/GNNForVQA/gsr_examples.png">
+  <img src="https://raw.githubusercontent.com/itsShnik/itsShnik.github.io/master/_blog_images/GNNForVQA/gsr_examples.png">
 </p>
 
 ## References
