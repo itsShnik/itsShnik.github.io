@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : iamshnik
 description         : >-
-    "Happiness can be found, even in the darkest of times, if one only remembers to turn on the light. :sparkles:"
+    "Not All Treasure Is Silver And Gold, Mate."
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 remote_theme        : itsShnik/portfolYOU       # theme 
 
